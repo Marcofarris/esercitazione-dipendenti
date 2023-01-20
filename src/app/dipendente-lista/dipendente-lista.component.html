@@ -1,0 +1,27 @@
+<div class="row">
+    <div class="col-6">
+        <form class="m-5">
+            <div>
+                <div class="row">
+                    <div class="col-6">
+                        <p>ID</p>
+                    </div>
+                    <div class="col-6">
+                        <p>EMAIL</p>
+                    </div>
+                </div>
+            </div>
+            <div class="row" *ngFor="let el of lista">
+                <div class="col-6">
+                    <button (click)="selectDip(el.id)"> {{el.id}} </button>
+                </div>
+                <div class="col-6">
+                    {{el.email}}
+                </div>
+            </div>
+        </form>
+    </div>
+    <div class="col-6">
+        <app-dipendente-dettaglio [item]="currentItem" *ngIf="isSelected"></app-dipendente-dettaglio>
+    </div>
+</div>
