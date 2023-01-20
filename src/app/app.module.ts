@@ -8,6 +8,7 @@ import { DipendenteAggiungiComponent } from './dipendente-aggiungi/dipendente-ag
 import { DipendenteListaComponent } from './dipendente-lista/dipendente-lista.component';
 import { DipendenteDettaglioComponent } from './dipendente-dettaglio/dipendente-dettaglio.component';
 import { DatatransformPipe } from './datatransform.pipe';
+import { DatePipe } from '@angular/common';
 
 @NgModule({
   declarations: [
@@ -22,7 +23,7 @@ import { DatatransformPipe } from './datatransform.pipe';
     AppRoutingModule,
     FormsModule
   ],
-  providers: [],
+  providers: [DatePipe],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

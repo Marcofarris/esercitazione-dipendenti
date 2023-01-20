@@ -8,10 +8,12 @@ export class SDipendenteService {
   Lista: CDipendente[] = []
 
   id: number;
+  nuovaData:Date;
 
   constructor() {
     this.id = 0;
-    this.Lista.push(new CDipendente(this.id, 'Marco', 'Far', "1997", "marco@gm.it"))
+    this.nuovaData = new Date
+    this.Lista.push(new CDipendente(this.id, 'Marco', 'Far', this.nuovaData , "marco@gm.it"))
   }
 
   addDip(dip: any) {
