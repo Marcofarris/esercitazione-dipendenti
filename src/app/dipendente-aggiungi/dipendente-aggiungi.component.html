@@ -1,19 +1,31 @@
-<form (ngSubmit)="onSubmit()">
-    <div class="form-group m-2">
-        <label for="nome">Nome</label>
-        <input type="text" class="form-control m-1" id="nome" [(ngModel)]="nome" name="nome">
+<div class="m-5">
+    <form (ngSubmit)="onSubmit()">
+        <div class="form-group m-2">
+            <div class="row">
+                <div class="col-6">
+                    <label for="nome">Nome</label>
+                    <input type="text" class="form-control m-1" id="nome" [(ngModel)]="nome" name="nome">
 
-        <label for="cognome">cognome</label>
-        <input type="text" class="form-control m-1" id="cognome" [(ngModel)]="cognome" name="cognome">
+                    <label for="cognome">cognome</label>
+                    <input type="text" class="form-control m-1" id="cognome" [(ngModel)]="cognome" name="cognome">
+                </div>
+                <div class="col-6">
+                    <label for="email">email</label>
+                    <input type="text" class="form-control m-1" id="email" [(ngModel)]="email" name="email">
 
-        <label for="email">email</label>
-        <input type="text" class="form-control m-1" id="email" [(ngModel)]="email" name="email">
+                    <label for="data">data di nascita</label>
+                    <input type="text" class="form-control m-1" id="data" [(ngModel)]="data" name="data">
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-6">
+            </div>
+            <div class="col-6">
+                <button type="submit" class="btn btn-primary m-2">Submit</button>
 
-        <label for="data">data di nascita</label>
-        <input type="text" class="form-control m-1" id="data" [(ngModel)]="data" name="data">
-    </div>
-
-    <button type="submit" class="btn btn-success m-2">Submit</button>
-
-    <button type="button" class="btn btn-info m-2" (click)="reset()">Reset</button>
-</form>
+                <button type="button" class="btn btn-warning m-2" (click)="reset()">Reset</button>
+            </div>
+        </div>
+    </form>
+</div>

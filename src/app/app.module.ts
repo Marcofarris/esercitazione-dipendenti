@@ -7,13 +7,15 @@ import { AppComponent } from './app.component';
 import { DipendenteAggiungiComponent } from './dipendente-aggiungi/dipendente-aggiungi.component';
 import { DipendenteListaComponent } from './dipendente-lista/dipendente-lista.component';
 import { DipendenteDettaglioComponent } from './dipendente-dettaglio/dipendente-dettaglio.component';
+import { DatatransformPipe } from './datatransform.pipe';
 
 @NgModule({
   declarations: [
     AppComponent,
     DipendenteAggiungiComponent,
     DipendenteListaComponent,
-    DipendenteDettaglioComponent
+    DipendenteDettaglioComponent,
+    DatatransformPipe
   ],
   imports: [
     BrowserModule,
